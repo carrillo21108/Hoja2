@@ -1,17 +1,15 @@
 /**
- * 
- */
-
-/**
+ * Interfaz IPosfixCalc
  * @author moises.alonso
  *
+ * En esta interfaz se definen los metodos que implementa la calculadora.
  */
 public interface IPosfixCalc {
 
 	/***
-	 * This method is used to evaluate a postfix expression
-	 * @param expresion this is a single expression like: 1 2 + 4 * 3 +
-	 * @return the evaluation of the expression
+	 * Este metodo evalua una expresion en notacion postfija y retorna su resultado
+	 * @param expresion: es la expresion simple "1 2 + 4 * 3 +" (String)
+	 * @return int: el resultado de la expresion
 	 */
 	int Evaluate(String expresion);
 }
