@@ -3,9 +3,11 @@ import java.io.*;
 
 public class TxtScanner {
 	
-	private String ruta="D:\\\\Datos.txt";
+	private String ruta;
 
-    public TxtScanner(){}
+    public TxtScanner(String ruta){
+    	this.ruta = ruta;
+    }
 
     public ArrayList<String> leerTxt(){
 
@@ -28,6 +30,7 @@ public class TxtScanner {
             return filas;
             
         }catch(Exception e){
+        	System.out.println("Error al escanear el archivo.");
             e.printStackTrace();
         }finally{
             // En el finally cerramos el archivo, tanto si se leyo correctamente como si
@@ -37,6 +40,7 @@ public class TxtScanner {
                     fr.close();     
                 }                  
             }catch (Exception f){ 
+            	System.out.println("Error al cerrar el archivo.");
                f.printStackTrace();
             }
         }
