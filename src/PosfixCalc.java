@@ -10,7 +10,12 @@
 public class PosfixCalc implements IPosfixCalc{
 	
 	//Stack del sistema
-	Stack pila;
+	private Stack pila;
+	
+	/**
+	 * Constructor sin parametros
+	 */
+	public PosfixCalc() {}
 	
 	@Override
 	/**
