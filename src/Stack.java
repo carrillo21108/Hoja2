@@ -31,38 +31,38 @@ public class Stack<T> implements IStack<T> {
 		vector.add(0, value);
 	}
 	
+	@Override
 	/**
 	 * Realiza una operacion pop sobre la pila
 	 * @see Vector#remove(int)
 	 */
-	@Override
 	public T pull() {
 		return vector.remove(0);
 	}
-
+	
+	@Override
 	/**
 	 * Realiza una operacion top sobre la pila
 	 * @see Vector#get(int)
 	 */
-	@Override
 	public T peek() {
 		return vector.get(0);
 	}
 	
+	@Override
 	/**
 	 * Retorna la logitud de la pila
 	 * @see Vector#size()
 	 */
-	@Override
 	public int count() {
 		return vector.size();
 	}
 	
+	@Override
 	/**
 	 * Retorna el estado de contenido en la pila
 	 * @see Vector#isEmpty()
 	 */
-	@Override
 	public boolean isEmpty() {		
 		return vector.isEmpty();
 	}
